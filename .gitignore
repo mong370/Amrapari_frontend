@@ -1,0 +1,77 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build output
+# =========================
+dist/
+dist-ssr/
+build/
+coverage/
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+*.local
+
+# =========================
+# Cache
+# =========================
+.eslintcache
+*.tsbuildinfo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Visual Studio
+*.suo
+
+# =========================
+# Temporary
+# =========================
+tmp/
+temp/
+
+# =========================
+# Optional: backend artifacts
+# (if repo contains backend)
+# =========================
+target/
+.gradle/
+*.class
+*.jar
+*.war
