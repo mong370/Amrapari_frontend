@@ -161,12 +161,6 @@ const mobileOpen = ref(false)
     </div>
 
     <!-- Accent underline -->
-    <div
-      class="h-px w-full"
-      :class="themeStore.isDark
-        ? 'bg-linear-to-r from-transparent via-[#3a6fa8]/25 to-transparent'
-        : 'bg-linear-to-r from-transparent via-blue-400/20 to-transparent'"
-    />
 
     <!-- Mobile Dropdown -->
     <transition
