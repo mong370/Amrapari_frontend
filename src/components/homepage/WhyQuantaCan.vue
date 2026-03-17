@@ -152,7 +152,7 @@ const steps = [
                 >
                   {{ t(`step${step.id}Desc`) }}
                 </p>
-                <div :class="`h-1.5 w-24 bg-gradient-to-r ${step.accentColor} rounded-full`"></div>
+                <div :class="`h-1.5 w-24 bg-linear-to-r ${step.accentColor} rounded-full`"></div>
               </div>
             </div>
 

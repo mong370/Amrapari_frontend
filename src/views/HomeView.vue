@@ -114,7 +114,7 @@ onUnmounted(() => stopAutoPlay())
       >
         <!-- Background image -->
         <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[8000ms]"
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-8000"
           :class="index === currentSlideIndex ? 'scale-100' : 'scale-105'"
           :style="slide.imageUrl ? { backgroundImage: `url(${imgUrl(slide.imageUrl)})` } : {}"
         />
@@ -239,7 +239,7 @@ onUnmounted(() => stopAutoPlay())
 
       <!-- Progress bar -->
       <div
-        class="absolute bottom-0 left-0 right-0 z-20 h-[2px]"
+        class="absolute bottom-0 left-0 right-0 z-20 h-0.5"
         :class="themeStore.isDark ? 'bg-white/10' : 'bg-white/20'"
       >
         <div

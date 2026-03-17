@@ -175,7 +175,7 @@
         <!-- Get in Touch -->
         <div class="mt-6 text-center">
           <a href="mailto:cosmoschool@quantummethod.org.bd"
-            class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-600 to-blue-600 dark:from-green-500 dark:to-blue-500 text-white rounded-full hover:shadow-lg transition-all text-sm">
+            class="inline-flex items-center gap-2 px-5 py-2 bg-linear-to-r from-green-600 to-blue-600 dark:from-green-500 dark:to-blue-500 text-white rounded-full hover:shadow-lg transition-all text-sm">
             <Mail class="w-4 h-4" />
             Send Email
           </a>
