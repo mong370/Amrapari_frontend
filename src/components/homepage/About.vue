@@ -18,12 +18,12 @@ const { t, isBn } = useLang()
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <!-- Top-left orb -->
       <div
-        class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full blur-[120px] opacity-30 transition-colors duration-500"
+        class="absolute -top-32 -left-32 w-125 h-125 rounded-full blur-[120px] opacity-30 transition-colors duration-500"
         :class="themeStore.isDark ? 'bg-blue-900' : 'bg-blue-100'"
       />
       <!-- Bottom-right orb -->
       <div
-        class="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full blur-[120px] opacity-25 transition-colors duration-500"
+        class="absolute -bottom-32 -right-32 w-125 h-125 rounded-full blur-[120px] opacity-25 transition-colors duration-500"
         :class="themeStore.isDark ? 'bg-emerald-900' : 'bg-emerald-100'"
       />
       <!-- Grid lines -->
@@ -56,7 +56,7 @@ const { t, isBn } = useLang()
           ]"
           style="font-size: clamp(2rem, 4vw, 3rem);"
         >
-          {{ t('about.aboutTitle') }}
+          {{ t('aboutTitle') }}
         </h2>
 
         <!-- Decorative divider -->
@@ -97,7 +97,7 @@ const { t, isBn } = useLang()
                 themeStore.isDark ? 'text-slate-300' : 'text-slate-600',
                 isBn ? 'bn-font' : ''
               ]"
-            >{{ t('about.aboutDesc1') }}</p>
+            >{{ t('aboutDesc1') }}</p>
           </div>
 
           <!-- Desc 2 -->
@@ -124,7 +124,7 @@ const { t, isBn } = useLang()
                 themeStore.isDark ? 'text-slate-300' : 'text-slate-600',
                 isBn ? 'bn-font' : ''
               ]"
-            >{{ t('about.aboutDesc2') }}</p>
+            >{{ t('aboutDesc2') }}</p>
           </div>
 
           <!-- Three pillars -->

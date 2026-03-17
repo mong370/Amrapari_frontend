@@ -4,6 +4,13 @@ import { useThemeStore } from '@/stores/theme'
 import { useLang }       from '@/composables/useLang'
 import Earth             from '@/components/homepage/Earth.vue'
 import About            from '@/components/homepage/About.vue'
+import Testimonials from '@/components/homepage/Testimonials.vue'
+import Activities from '@/components/homepage/Activities.vue'
+import Success from '@/components/homepage/Success.vue'
+import WhyQuantaCan from '@/components/homepage/WhyQuantaCan.vue'
+import Vision from '@/components/homepage/Vision.vue'
+import Tutorials from '@/components/homepage/Tutorials.vue'
+import Contact from '@/components/homepage/Contact.vue'
 
 const themeStore = useThemeStore()
 const { t, isBn, tField } = useLang()
@@ -55,7 +62,14 @@ onUnmounted(() => stopAutoPlay())
 <template>
 
   <Earth />
+  <Testimonials />
   <About />
+  <Activities />
+  <Success />
+  <WhyQuantaCan />
+  <Vision />
+  <Tutorials />
+  <Contact />
   <div :class="themeStore.isDark ? 'bg-[#0f1318]' : 'bg-slate-50'">
 
 

@@ -40,7 +40,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent1') }}</p>
+        >{{ t('heroContent1') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl transition-colors duration-300"
@@ -48,7 +48,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent2') }}</p>
+        >{{ t('heroContent2') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl transition-colors duration-300"
@@ -56,7 +56,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent3') }}</p>
+        >{{ t('heroContent3') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl transition-colors duration-300"
@@ -64,7 +64,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent4') }}</p>
+        >{{ t('heroContent4') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl transition-colors duration-300"
@@ -72,7 +72,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent5') }}</p>
+        >{{ t('heroContent5') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl transition-colors duration-300"
@@ -80,7 +80,7 @@ const activities = [
             themeStore.isDark ? 'text-blue-300/80' : 'text-blue-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroContent6') }}</p>
+        >{{ t('heroContent6') }}</p>
 
         <p
           class="text-lg sm:text-xl lg:text-2xl font-semibold transition-colors duration-300"
@@ -88,7 +88,7 @@ const activities = [
             themeStore.isDark ? 'text-emerald-400/90' : 'text-green-200',
             isBn ? 'bn-font' : ''
           ]"
-        >{{ t('hero.heroTagline') }}</p>
+        >{{ t('heroTagline') }}</p>
       </div>
 
       <!-- Right: Earth Video + Sliding Activities -->
