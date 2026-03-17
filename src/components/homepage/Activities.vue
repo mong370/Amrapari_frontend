@@ -131,14 +131,7 @@ const activities = computed(() => [
             {{ activity.description }}
           </p>
           <!-- Explore Button -->
-          <div class="text-center">
-            <router-link
-              to="/tutorials"
-              class="inline-block px-4 py-2 bg-linear-to-r from-blue-500 to-purple-500 text-white text-xs font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
-            >
-              {{ t('activities.exploreActivity') }}
-            </router-link>
-          </div>
+          
         </div>
       </div>
     </div>

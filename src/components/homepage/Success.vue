@@ -132,12 +132,7 @@ onMounted(() => {
             {{ achievement.label }}
           </p>
 
-          <router-link
-            to="/success-stories"
-            class="inline-block px-3 py-1 bg-linear-to-r from-blue-500 to-purple-500 text-white text-xs font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
-          >
-            {{ t('success.exploreActivity') }}
-          </router-link>
+          
         </div>
       </div>
     </div>
