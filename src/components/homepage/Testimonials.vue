@@ -152,7 +152,7 @@ onUnmounted(() => {
 
             <!-- Quote -->
             <div
-              class="relative mb-4 flex-grow rounded-lg p-4 border-l-4"
+              class="relative mb-4 grow rounded-lg p-4 border-l-4"
               :class="[
                 themeStore.isDark
                   ? 'bg-linear-to-br from-gray-700 to-gray-800 border-blue-400'
@@ -223,7 +223,7 @@ onUnmounted(() => {
           :class="[
             'transition-all duration-300 rounded-full',
             currentPage === index - 1
-              ? 'w-8 h-2 bg-gradient-to-r from-blue-600 to-blue-400'
+              ? 'w-8 h-2 bg-linear-to-r from-blue-600 to-blue-400'
               : themeStore.isDark
                 ? 'w-2 h-2 bg-gray-600 hover:bg-gray-500'
                 : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'

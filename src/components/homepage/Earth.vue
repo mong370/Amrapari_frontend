@@ -30,7 +30,7 @@ const activities = [
         : 'bg-linear-to-br from-slate-950 via-blue-950 to-indigo-950'"
     />
 
-    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl gap-8 sm:gap-12 min-h-[auto] lg:min-h-screen">
+    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl gap-8 sm:gap-12 min-h-auto lg:min-h-screen">
 
       <!-- Left: Text content -->
       <div class="flex-1 flex flex-col items-center space-y-2 text-center lg:text-left lg:items-start">
@@ -106,7 +106,7 @@ const activities = [
 
           <!-- Animated Activities -->
           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="relative w-full h-[2rem] overflow-hidden flex items-center justify-center">
+            <div class="relative w-full h-8 overflow-hidden flex items-center justify-center">
               <div class="animate-slide whitespace-nowrap text-white text-xl font-semibold drop-shadow-lg flex">
                 <span
                   v-for="(activity, index) in activities"
