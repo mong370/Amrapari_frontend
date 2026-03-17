@@ -43,7 +43,7 @@ const mobileOpen = ref(false)
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
                 active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
-              >{{ t('nav.home') }}</router-link>
+              >{{ t('home') }}</router-link>
 
               <router-link
                 to="/vision"
@@ -52,7 +52,7 @@ const mobileOpen = ref(false)
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
                 active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
-              >{{ t('nav.vision') }}</router-link>
+              >{{ t('vision') }}</router-link>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ const mobileOpen = ref(false)
                 active-class="ring-1 ring-[#3a6fa8]/50"
               >
                 <LayoutGrid class="w-3.5 h-3.5" />
-                {{ t('nav.dashboard') }}
+                {{ t('dashboard') }}
               </router-link>
             </template>
 
@@ -137,7 +137,7 @@ const mobileOpen = ref(false)
                   : 'background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); box-shadow: 0 2px 12px rgba(59,130,246,0.35);'"
               >
                 <iconify-icon icon="fa-solid:sign-in-alt" style="font-size:12px" />
-                {{ t('nav.login') }}
+                {{ t('login') }}
               </router-link>
             </template>
 
@@ -195,7 +195,7 @@ const mobileOpen = ref(false)
               : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'"
             active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
           >
-            {{ t('nav.home') }}
+            {{ t('home') }}
             <ChevronRight class="w-3.5 h-3.5 opacity-30" />
           </router-link>
 
@@ -208,7 +208,7 @@ const mobileOpen = ref(false)
               : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'"
             active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
           >
-            {{ t('nav.vision') }}
+            {{ t('vision') }}
             <ChevronRight class="w-3.5 h-3.5 opacity-30" />
           </router-link>
 
@@ -228,7 +228,7 @@ const mobileOpen = ref(false)
                 : 'text-blue-600 bg-blue-50 hover:bg-blue-100'"
             >
               <LayoutGrid class="w-4 h-4" />
-              {{ t('nav.dashboard') }}
+              {{ t('dashboard') }}
             </router-link>
           </template>
 
@@ -242,7 +242,7 @@ const mobileOpen = ref(false)
                 : 'background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);'"
             >
               <iconify-icon icon="fa-solid:sign-in-alt" style="font-size:12px" />
-              {{ t('nav.login') }}
+              {{ t('login') }}
             </router-link>
           </template>
 
