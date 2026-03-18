@@ -38,65 +38,65 @@ const mobileOpen = ref(false)
             <div class="hidden md:flex items-center gap-0.5">
               <router-link
                 to="/"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 hover-underline py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('home') }}</router-link>
 
               <router-link
                 to="/vision"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('vision') }}</router-link>
 
               <router-link
                 to="/skills"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('skills') }}</router-link>
 
               <router-link
                 to="/campus"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('campus') }}</router-link>
 
               <router-link
                 to="/activities"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('activities') }}</router-link>
 
               <router-link
                 to="/blog"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('blog') }}</router-link>
 
               <router-link
                 to="/contact"
-                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 hover-underline rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
-                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+                active-class="!text-[#7eb8f7] active-link !font-semibold"
               >{{ t('contact') }}</router-link>
             </div>
           </div>
@@ -302,4 +302,28 @@ const mobileOpen = ref(false)
 .theme-spin-leave-active { transition: opacity 0.12s ease, transform 0.16s ease; }
 .theme-spin-enter-from   { opacity: 0; transform: rotate(-35deg) scale(0.65); }
 .theme-spin-leave-to     { opacity: 0; transform: rotate(35deg)  scale(0.65); }
+.hover-underline {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-underline::after,
+        .hover-underline::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, #598dd0, #42e933);
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.4s ease-out;
+        }
+
+        .hover-underline:hover::after,
+        .hover-underline:hover::before,
+        .active-link::after,
+        .active-link::before {
+            transform: scaleX(1);
+        }
 </style>
