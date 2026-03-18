@@ -54,10 +54,14 @@ onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       const entry = entries[0]
-      if (entry.isIntersecting && !animated) {
-        animated = true
-        startEasingAnimation()
-        observer.disconnect()
+      if (entry.isIntersecting) {
+        if (!animated) {
+          animated = true
+          startEasingAnimation()
+        }
+      } else {
+        animated = false
+        achievements.value.forEach(a => (a.displayCount = 0))
       }
     },
     { threshold: 0.3 } // triggers when 30% of section is visible
@@ -103,7 +107,7 @@ onMounted(() => {
             isBn ? 'bn-font' : ''
           ]"
         >
-          {{ t('success.successDesc') }}
+          {{ t('successDesc') }}
         </p>
       </div>
 
