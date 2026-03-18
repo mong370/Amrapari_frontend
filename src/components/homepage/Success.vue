@@ -54,10 +54,14 @@ onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       const entry = entries[0]
-      if (entry.isIntersecting && !animated) {
-        animated = true
-        startEasingAnimation()
-        observer.disconnect()
+      if (entry.isIntersecting) {
+        if (!animated) {
+          animated = true
+          startEasingAnimation()
+        }
+      } else {
+        animated = false
+        achievements.value.forEach(a => (a.displayCount = 0))
       }
     },
     { threshold: 0.3 } // triggers when 30% of section is visible
@@ -103,7 +107,7 @@ onMounted(() => {
             isBn ? 'bn-font' : ''
           ]"
         >
-          {{ t('success.successDesc') }}
+          {{ t('successDesc') }}
         </p>
       </div>
 
@@ -132,12 +136,7 @@ onMounted(() => {
             {{ achievement.label }}
           </p>
 
-          <router-link
-            to="/success-stories"
-            class="inline-block px-3 py-1 bg-linear-to-r from-blue-500 to-purple-500 text-white text-xs font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
-          >
-            {{ t('success.exploreActivity') }}
-          </router-link>
+          
         </div>
       </div>
     </div>

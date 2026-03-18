@@ -91,12 +91,15 @@ const activities = computed(() => [
       </div>
 
       <!-- Activities Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <div v-for="(activity, index) in activities" :key="index"
-          class="group rounded-xl backdrop-blur-sm p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
-          :class="themeStore.isDark
-            ? 'border-gray-700 bg-gray-800/40'
-            : 'border-gray-100 bg-white/80'"
+          class="holographic-card group rounded-2xl backdrop-blur-sm p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+          :class="[
+            themeStore.isDark ? 'theme-dark' : 'theme-light',
+            themeStore.isDark
+              ? 'border border-gray-700 bg-gray-800/40 hover:shadow-blue-500/10'
+              : 'bg-gray-50 hover:shadow-gray-500/10'
+          ]"
         >
           <!-- Icon -->
           <div :class="[
@@ -111,7 +114,7 @@ const activities = computed(() => [
 
           <!-- Title -->
           <h3
-            class="text-sm font-semibold mb-1 line-clamp-2 transition-colors duration-300"
+            class="text-sm font-semibold mb-1 mt-2 line-clamp-2 transition-colors duration-300"
             :class="[
               themeStore.isDark ? 'text-gray-100' : 'text-gray-900',
               isBn ? 'bn-font' : ''
@@ -129,16 +132,7 @@ const activities = computed(() => [
             ]"
           >
             {{ activity.description }}
-          </p>
-          <!-- Explore Button -->
-          <div class="text-center">
-            <router-link
-              to="/tutorials"
-              class="inline-block px-4 py-2 bg-linear-to-r from-blue-500 to-purple-500 text-white text-xs font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
-            >
-              {{ t('activities.exploreActivity') }}
-            </router-link>
-          </div>
+          </p>       
         </div>
       </div>
     </div>
@@ -148,4 +142,52 @@ const activities = computed(() => [
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
 .bn-font { font-family: 'Noto Sans Bengali', sans-serif; }
+
+.holographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #000;
+}
+
+.holographic-card {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
 </style>
