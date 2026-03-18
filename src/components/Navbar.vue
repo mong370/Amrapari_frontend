@@ -38,7 +38,7 @@ const mobileOpen = ref(false)
             <div class="hidden md:flex items-center gap-0.5">
               <router-link
                 to="/"
-                class="px-3.5 py-1.75 rounded-lg text-[13px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
@@ -47,12 +47,57 @@ const mobileOpen = ref(false)
 
               <router-link
                 to="/vision"
-                class="px-3.5 py-1.75 rounded-lg text-[13px] font-medium tracking-wide transition-all duration-200"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
                 :class="themeStore.isDark
                   ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
                 active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
               >{{ t('vision') }}</router-link>
+
+              <router-link
+                to="/skills"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                :class="themeStore.isDark
+                  ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
+                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+              >{{ t('skills') }}</router-link>
+
+              <router-link
+                to="/campus"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                :class="themeStore.isDark
+                  ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
+                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+              >{{ t('campus') }}</router-link>
+
+              <router-link
+                to="/activities"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                :class="themeStore.isDark
+                  ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
+                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+              >{{ t('activities') }}</router-link>
+
+              <router-link
+                to="/blog"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                :class="themeStore.isDark
+                  ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
+                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+              >{{ t('blog') }}</router-link>
+
+              <router-link
+                to="/contact"
+                class="px-3.5 py-1.75 rounded-lg text-[15px] font-medium tracking-wide transition-all duration-200"
+                :class="themeStore.isDark
+                  ? 'text-[#7a8a9e] hover:text-[#c9d4e0] hover:bg-[#1e2733]'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'"
+                active-class="!text-[#7eb8f7] !bg-[#1a2a3d] !font-semibold"
+              >{{ t('contact') }}</router-link>
             </div>
           </div>
 
