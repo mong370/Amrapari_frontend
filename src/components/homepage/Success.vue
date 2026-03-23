@@ -114,7 +114,7 @@ onMounted(() => {
       <!-- Achievements Grid -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <div v-for="(achievement, index) in achievements" :key="index"
-          class="rounded-xl p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+          class="holographic-card rounded-xl p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
           :class="themeStore.isDark
             ? 'border-gray-700 bg-gray-800/40 ' + achievement.bgDark
             : 'border-gray-100 ' + achievement.bgLight"
@@ -146,4 +146,37 @@ onMounted(() => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
 .bn-font { font-family: 'Noto Sans Bengali', sans-serif; }
+
+.holographic-card {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
 </style>

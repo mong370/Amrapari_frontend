@@ -152,10 +152,7 @@ const mobileOpen = ref(false)
             </button>
 
             <!-- Separator -->
-            <div
-              class="w-px h-5 mx-0.5"
-              :class="themeStore.isDark ? 'bg-[#232c3a]' : 'bg-slate-200'"
-            />
+            <div />
 
             <!-- Dashboard (authenticated) -->
             <template v-if="authStore.isAuthenticatedAfterCheck">

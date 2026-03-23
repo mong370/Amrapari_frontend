@@ -143,26 +143,10 @@ const activities = computed(() => [
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
 .bn-font { font-family: 'Noto Sans Bengali', sans-serif; }
 
-.holographic-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: #000;
-}
-
 .holographic-card {
   overflow: hidden;
   transition: all 0.5s ease;
 }
-
-.holographic-card h2 {
-  color: #0ff;
-  font-size: 2rem;
-  position: relative;
-  z-index: 2;
-}
-
 .holographic-card::before {
   content: '';
   position: absolute;

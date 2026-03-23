@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar.vue'
 import { useAuthStore } from '@/stores/auth'
 import { useThemeStore } from './stores/theme'
 
+
 const route     = useRoute()
 const router    = useRouter()
 const authStore = useAuthStore()
@@ -37,7 +38,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
     <Navbar v-if="showNavbar" />
     <RouterView />
   </div>
