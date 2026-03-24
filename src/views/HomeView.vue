@@ -11,7 +11,6 @@ import WhyQuantaCan from '@/components/homepage/WhyQuantaCan.vue'
 import Vision from '@/components/homepage/Vision.vue'
 import Tutorials from '@/components/homepage/Tutorials.vue'
 import Contact from '@/components/homepage/Contact.vue'
-import Footer from '@/components/Footer.vue'
 
 const themeStore = useThemeStore()
 const { t, isBn, tField } = useLang()
@@ -293,7 +292,6 @@ onUnmounted(() => stopAutoPlay())
     </section>
 
   </div>
-  <Footer />
 </template>
 
 <style scoped>

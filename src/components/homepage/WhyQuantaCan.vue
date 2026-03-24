@@ -188,6 +188,147 @@ function handleScroll() {
       </section>
     </div>
   </div>
+  <!-- Bottom Message -->
+   <div class="py-20 transition-colors duration-500"
+    :class="themeStore.isDark
+      ? 'bg-linear-to-b from-gray-950 via-gray-900 to-gray-950'
+      : 'bg-linear-to-b from-gray-50 to-white'">
+      <div class="mt-20 text-center">
+        <div
+          class="inline-block rounded-3xl px-10 py-8 border-2 shadow-xl transition-colors duration-500"
+          :class="themeStore.isDark
+            ? 'bg-linear-to-r from-gray-800 via-gray-900 to-gray-800 border-gray-700'
+            : 'bg-linear-to-r from-orange-50 via-purple-50 to-blue-50 border-gray-200'"
+        >
+          <div class="flex items-center justify-center gap-3 mb-3">
+            <div
+              class="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+              :class="themeStore.isDark
+                ? 'bg-linear-to-r from-orange-600 to-purple-800'
+                : 'bg-linear-to-r from-orange-400 to-purple-600'"
+            >
+              <Trophy class="w-6 h-6 text-white" />
+            </div>
+            <p
+              class="text-xl sm:text-2xl transition-colors duration-300"
+              :class="[
+                themeStore.isDark ? 'text-white' : 'text-gray-900',
+                isBn ? 'bn-font' : ''
+              ]"
+            >
+              {{ isBn
+                  ? 'এই পথ ধরে আমরা আমাদের স্বপ্নের দিকে এগিয়ে চলি এবং আমরা হয়ে উঠছি সৃজনশীল ও দক্ষ ব্যক্তি'
+                  : 'By following this path, we are progressing toward our dreams and becoming creative and skilled individuals' }}
+            </p>
+          </div>
+          <p
+            class="text-lg sm:text-xl transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-gray-300' : 'text-gray-800',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{
+              isBn
+                ? 'আমরা আত্মবিশ্বাসী, দক্ষ এবং মানবিক নেতা হয়ে উঠি'
+                : 'We become confident, skilled, and compassionate leaders'
+            }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 px-10">
+        <div
+          class="rounded-2xl p-8 shadow-lg border hover:shadow-xl transition-shadow duration-300"
+          :class="themeStore.isDark
+            ? 'bg-gray-800 border-gray-700'
+            : 'bg-white border-gray-100'"
+        >
+          <BookOpen class="w-10 h-10 mb-4 mx-auto text-indigo-500" />
+          <h4
+            class="text-center mb-2 transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-white' : 'text-gray-900',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{ isBn ? 'সকাল থেকে সন্ধ্যা' : 'Morning to Evening' }}
+          </h4>
+          <p
+            class="text-sm text-center transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-gray-400' : 'text-gray-600',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{
+              isBn
+                ? 'সম্পূর্ণ দিনের পরিকল্পিত রুটিন'
+                : 'Complete daily structured routine'
+            }}
+          </p>
+        </div>
+
+        <div
+          class="rounded-2xl p-8 shadow-lg border hover:shadow-xl transition-shadow duration-300"
+          :class="themeStore.isDark
+            ? 'bg-gray-800 border-gray-700'
+            : 'bg-white border-gray-100'"
+        >
+          <Brain class="w-10 h-10 mb-4 mx-auto text-green-500" />
+          <h4
+            class="text-center mb-2 transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-white' : 'text-gray-900',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{ isBn ? 'পরিকল্পিত শিক্ষা' : 'Structured Learning' }}
+          </h4>
+          <p
+            class="text-sm text-center transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-gray-400' : 'text-gray-600',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{ isBn ? 'প্রতিটি ধাপে নির্দিষ্ট লক্ষ্য' : 'Clear objectives at every step' }}
+          </p>
+        </div>
+
+        <div
+          class="rounded-2xl p-8 shadow-lg border hover:shadow-xl transition-shadow duration-300"
+          :class="themeStore.isDark
+            ? 'bg-gray-800 border-gray-700'
+            : 'bg-white border-gray-100'"
+        >
+          <Code class="w-10 h-10 mb-4 mx-auto text-yellow-500" />
+          <h4
+            class="text-center mb-2 transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-white' : 'text-gray-900',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{ isBn ? 'সার্বিক উন্নয়ন' : 'Holistic Development' }}
+          </h4>
+          <p
+            class="text-sm text-center transition-colors duration-300"
+            :class="[
+              themeStore.isDark ? 'text-gray-400' : 'text-gray-600',
+              isBn ? 'bn-font' : ''
+            ]"
+          >
+            {{
+              isBn
+                ? 'শারীরিক ও মানসিক বিকাশ'
+                : 'Physical and mental growth'
+            }}
+          </p>
+        </div>
+      </div>
+      </div>
 </template>
 
 <style scoped>

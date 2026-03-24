@@ -1,9 +1,10 @@
 <script setup>
 import { RouterView, useRoute, useRouter } from 'vue-router'
 import { computed, onMounted } from 'vue'
-import Navbar from '@/components/Navbar.vue'
 import { useAuthStore } from '@/stores/auth'
 import { useThemeStore } from './stores/theme'
+import Footer from './components/Footer.vue'
+import Navbar from './components/Navbar.vue'
 
 
 const route     = useRoute()
@@ -41,5 +42,6 @@ onMounted(async () => {
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
     <Navbar v-if="showNavbar" />
     <RouterView />
+    <Footer v-if="showNavbar" />
   </div>
 </template>

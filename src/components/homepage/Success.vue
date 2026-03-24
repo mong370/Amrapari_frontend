@@ -148,35 +148,28 @@ onMounted(() => {
 .bn-font { font-family: 'Noto Sans Bengali', sans-serif; }
 
 .holographic-card {
+  position: relative;
   overflow: hidden;
-  transition: all 0.5s ease;
 }
 
 .holographic-card::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  inset: 0;
   background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(0,255,255,0.3)
+    120deg,
+    transparent 30%,
+    rgba(0,255,255,0.3),
+    transparent 70%
   );
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
+  transform: translateX(-100%);
+  transition: 0.6s;
 }
-
 .holographic-card:hover {
   transform: scale(1.01);
   box-shadow: 0 0 20px rgba(0,255,255,0.5);
 }
-
 .holographic-card:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
+  transform: translateX(100%);
 }
 </style>
