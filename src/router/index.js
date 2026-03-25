@@ -1,6 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
 import HomeView from "@/views/HomeView.vue";
+
+import SkillsView from "@/views/SkillsView.vue";
+import CampusView from "@/views/CampusView.vue";
+import ContactView from "@/views/ContactView.vue";
+import BlogView from "@/views/BlogView.vue";
+import VisionView from "@/views/VisionView.vue";
+import ActivitiesView from "@/views/ActivitiesView.vue";
+
 import DashboardView from "@/views/DashboardView.vue";
 import LoginView from "@/views/login/LoginView.vue";
 import RegisterView from "@/views/login/RegisterView.vue";
@@ -17,6 +25,43 @@ const routes = [
     component: HomeView,
     meta: { requiresAuth: false },
   },
+  {
+    path: "/vision",
+    name: "vision",
+    component: VisionView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/skills",
+    name: "skills",
+    component: SkillsView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/campus",
+    name: "campus",
+    component: CampusView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/activities",
+    name: "activities",
+    component: ActivitiesView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: BlogView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: ContactView,
+    meta: { requiresAuth: false },
+  },
+
   {
     path: "/login",
     name: "login",

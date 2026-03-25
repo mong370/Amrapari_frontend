@@ -130,18 +130,21 @@
             <iframe v-if="selectedCampus === 'hikman'"
               :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.624580079725!2d92.2129743!3d21.6662477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc4a6a98b1cb9%3A0x45da12b8ad78d4b9!2sQuantum%20Cosmo%20School%20Lama!5e${mapType === 'satellite' ? '1' : '0'}!3m2!1sen!2sbd!4v1730364476374!5m2!1sen!2sbd`"
               class="w-full h-full border-0" allowfullscreen loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-forms"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <!-- Fikran Campus -->
             <iframe v-else-if="selectedCampus === 'fikran'"
               :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.7245099923517!2d92.2124624!3d21.6622351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc4a735abcf59%3A0x248b69d2a1b9a849!2sQuantum%20Lama%20Fikran%20Campus!5e${mapType === 'satellite' ? '1' : '0'}!3m2!1sen!2sbd!4v1730364584180!5m2!1sen!2sbd`"
               class="w-full h-full border-0" allowfullscreen loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-forms"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <!-- Ikran Campus -->
             <iframe v-else
               :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.693845564644!2d92.2105344!3d21.6633008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc4a7b9cf9a5f%3A0x1e017f7b3c83f9d5!2sQuantum%20Lama%20Ikran%20Campus!5e${mapType === 'satellite' ? '1' : '0'}!3m2!1sen!2sbd!4v1730364685340!5m2!1sen!2sbd`"
               class="w-full h-full border-0" allowfullscreen loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-forms"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 

@@ -16,6 +16,10 @@ export default {
   vision: "Vision",
 
   // Hero Section
+  hero: {
+    welcome: "Welcome to Amra Pari",
+    tagline: "The world is mine.",
+  },
   heroTitle: "Amra Pari",
   heroSubtitle: "The Quantas are ready to lead the world with knowledge, skill, and courage.",
   heroTagline: "The world is mine.",

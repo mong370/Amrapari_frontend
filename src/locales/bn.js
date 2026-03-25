@@ -16,6 +16,10 @@ export default {
   vision: "ভিশন",
 
   // Hero
+  hero: {
+    welcome: "আমরা পারিতে স্বাগতম",
+    tagline: "সারা পৃথিবী আমার।",
+  },
   heroTitle: "আমরা পারি",
   heroContent1: "আমি বিশ্বাসী",
   heroContent2: "আমি সাহসী",

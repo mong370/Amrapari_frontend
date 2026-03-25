@@ -9,7 +9,7 @@ import Activities from '@/components/homepage/Activities.vue'
 import Success from '@/components/homepage/Success.vue'
 import WhyQuantaCan from '@/components/homepage/WhyQuantaCan.vue'
 import Vision from '@/components/homepage/Vision.vue'
-import Tutorials from '@/components/homepage/Tutorials.vue'
+
 import Contact from '@/components/homepage/Contact.vue'
 
 const themeStore = useThemeStore()
@@ -35,7 +35,7 @@ const fetchHomeSlides = async () => {
     homeSlides.value = data.data || data.slides || []
     if (homeSlides.value.length > 1) startAutoPlay()
   } catch (err) {
-    console.error('Home slides error:', err)
+    // API not available, use default slides or empty
   }
 }
 
@@ -54,7 +54,8 @@ const prevSlide = () => { currentSlideIndex.value = (currentSlideIndex.value - 1
 
 onMounted(() => {
   loading.value = true
-  fetchHomeSlides().finally(() => loading.value = false)
+  // fetchHomeSlides().finally(() => loading.value = false)
+  loading.value = false
 })
 onUnmounted(() => stopAutoPlay())
 </script>
@@ -68,7 +69,7 @@ onUnmounted(() => stopAutoPlay())
   <Success />
   <WhyQuantaCan />
   <Vision />
-  <Tutorials />
+
   <Contact />
   <div :class="themeStore.isDark ? 'bg-[#0f1318]' : 'bg-slate-50'">
 

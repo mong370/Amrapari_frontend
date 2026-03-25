@@ -6,7 +6,7 @@ import { useLang } from '@/composables/useLang'
 import testimonials from '@/assets/data/testimonials.js'
 
 const themeStore = useThemeStore()
-const { t, isBn } = useLang()
+const { t, isBn, locale } = useLang()
 
 const currentPage = ref(0)
 const itemsPerPage = ref(3)
@@ -107,7 +107,7 @@ onUnmounted(() => {
               >
                 <img
                   :src="testimonial.image"
-                  :alt="testimonial.name[language]"
+                  :alt="testimonial.name[locale]"
                   class="w-full h-full object-cover"
                 />
               </div>

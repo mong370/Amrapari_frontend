@@ -13,4 +13,12 @@ app.use(pinia)
 app.use(i18n)
 app.use(router)
 
+// Suppress SecurityError from iframes
+window.addEventListener('error', function(e) {
+  if (e.error && e.error.name === 'SecurityError') {
+    e.preventDefault();
+    return false;
+  }
+});
+
 app.mount('#app')
