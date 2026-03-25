@@ -219,7 +219,7 @@ const { t, isBn } = useLang()
                 src="https://www.youtube.com/embed/lirOtwgGcgs"
                 title="আমরা পারি Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                sandbox="allow-scripts allow-same-origin allow-forms"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-top-navigation"
                 allowfullscreen
               />
             </div>
