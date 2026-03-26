@@ -1,6 +1,9 @@
-# Smart Todo
+# Amrapari
 
-This template should help get you started developing with Vue 3 in Vite.
+**** is a modern frontend web application built with Vue and Vite.
+
+---
+
 
 ## Recommended IDE Setup
 
